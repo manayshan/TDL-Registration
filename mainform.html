@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TDL Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/tdl.ico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <style>
+            body{
+            background-color:#f0f0f0;
+            font-size:20px;
+            }
+            table,tr,td{
+                table-layout: auto;
+                padding: 5px;
+                margin: 10px;
+                letter-spacing: 1px;
+                border-collapse: separate;
+                font-size: 20px;
+                
+            }
+            tr{
+                text-align: left;
+                margin: 2px;
+                padding: 5px;
+                border: 2px;
+
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="width100per">
+            <div class="container"></div>
+            <header>
+               <div class="container">
+                   <div class="logoWrap"><a href="javascript:;"><img src="img/logo.jpg" alt="" /></a></div>
+                   <div class="navWrap">
+                       <ul>
+                            <li><a href="javascript:;">TDL!</a>
+                                <ul>
+                                        <li><a href="main.html">What TDL?</a></li>
+                                        <li><a href="main.html">Why TDL?</a></li>
+                                        <li><a href="main.html">Register for TDL</a></li> 
+                                        <li><a href="http://pyptl.weebly.com/" target="_blank">Know MOre!!</a></li>
+                                </ul>
+                       </ul>
+                   </div>
+                   <div class="socialWrap">
+                       <ul>
+                            <li><a href="https://www.facebook.com/AnsalUniversity/?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/ansaluniversity"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCpTZrN2Gm0sKq1UUhcOCULQ"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="http://www.instagram.com/ansal.university"><i class="fa fa-instagram"></i></a></li>
+                       </ul>
+                   </div>
+               </div>
+            </header>
+            <div class="container">
+                <div class="contantWrap">
+                    <div class="leftWrap">
+                        
+<h1><u><i>TDL Registration Form</i></u></h1>
+<br>
+<form action="finaltest.php" method="POST">
+    <table>
+        <tr>
+            <td colspan="2"><h3 align="left"><u>Personal Information:-</u></h3></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Roll Number :</td>
+            <td><input type="text" name="rollno" placeholder="Roll No." required=""></td>
+        </tr>
+        <tr>
+            <td>Fisrt Name : </td>
+            <td><input type="text" name="firstname" placeholder="Fisrt Name" required=""></td>
+        </tr>
+        <tr>
+            <td>Last Name :</td>
+            <td><input type="text" name="lastname" placeholder="Last Name" required=""></td>
+        </tr>
+        <tr>
+            <td>Father's Name :</td>
+            <td><input type="text" name="fathername" placeholder="Father's Name" required=""></td>
+        </tr>
+        <tr>
+            <td>Course :</td>
+            <td><input type="text" name="course" placeholder="Course" required=""></td>
+        </tr>
+        <tr><td></td></tr>
+        <tr>
+            <td>School :</td>
+            <td><input list="School" name="school" placeholder="School">
+                <datalist id="School">
+                <option value="SET">School of Engineering & Technology</option>
+                <option value="SOL">School of Law</option>
+                <option value="SSAA">Sushant School of Art and Architecture</option>
+                <option value="SSD">Sushant School of Designing</option>
+                <option value="SHM">School of Hospitality and Management</option>
+                <option value="SHS">Sushant School of Health Science</option>
+                <option value="SSB">Sushant School of Business</option>
+                <option value="SSPD">Sushant School of Planning and Development</option>
+                 </datalist> </td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td><input type="Email" name="email" placeholder="Email Address"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number :</td>
+            <td><input type="text" name="mobileno" placeholder="Mobile No."></td>
+        </tr>
+        <tr>
+            <td>Present Address :</td>
+            <td><textarea name="presentaddress" rows="2" cols="35" placeholder="Write your present address here....."></textarea></td>
+        </tr>
+        <tr>
+            <td>Permanent Address :</td>
+            <td><textarea name="permanentaddress" rows="2" cols="35" placeholder="Write your permanent address here....."></textarea></td>
+        </tr>
+
+        <tr>
+            <td >-_-_-_-_-_-_-_-_-_-_-</td>
+            <td>-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-</td>
+        </tr>
+        <tr>
+            <td colspan="2" ><h3 align="left"><u>Course Opt:-</u></h3></td>
+        </tr>
+        <tr>
+            <td>Opt the guiding Schhol  :</td>
+        <script type="text/javascript">
+            function populate(s1,s2){
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);
+                s2.innerHTML = "";
+                switch(s1.value)
+                {
+                    case "SET":
+                    var optionArray = ["|","dataVisualization|Data Visualization[TD18ET01]","websiteDesigning|Website Designing[TD18ET02]","thinkDesign&Program|Think Design & Program[TD18ET03]","sustain|Sustainable Energy for Battery Charging[TD18ET04]","automation|Home Automation System[TD18ET05]","blindstick|Design of a Smart Blind Stick[TD18ET06","ed|Introduction to Engineering Drawing[TD18ET07]","employment|Employability Development Skill[Td18ET08]","resident|Introduction to Residential Wiring[TD18ET09]"];
+                    break;
+                case "SOL":
+                    var optionArray = ["|","cybercrime|Cyber Crimes[TD18LA01]","hindustanimusic|Introduction to Hindustani Classical Music[TD18LA06]","socialissues|Ssensitization of Youth on Social Issues[TD18LA07]"];
+                    break;
+                case "SSAA":
+                    var optionArray = ["|","urbanEcology|Urban Ecology[TD18AA07]","sitePlanning|Site Planning and Designing[TD18AA08]","film&genre|Film & Genre[TD18AA10]","heritageSites|Heritage Around Us:Interpreting Heritage Sites[TD18AA11]","sapien|Sapien, Site, Machine[TD18AA12]"];
+                    break;
+                case "SSD":
+                    var optionArray = ["|","sculpture|Sculpture- Listening & Responding to Space and Form[TDL18DE01]","doingBusiness|Doing Business in India[TDL18DE02]","indianCulture|Foundation of Indian Culture[TDL18DE04]","designThinking|Design Thinking[TDL18DE05]"];
+                    break;
+                case "SHM":
+                    var optionArray = ["|","destination|Destination Specialist/ Online Destination Management[TD18HM01]","grooming&etiquette|Professional Grooming and Etiquette[TD18HM02]","hospitality|Leading the Hospitality Business[TD18HM03]","beverageStartup|Food and Beverage Start up[TD18HM04]","foodstreets|Food streets of Old Delhi[TD18HM05]"];
+                    break;
+                case "SHS":
+                    var optionArray = ["|","publicHealth|Crucial Public Health Concerns in India Today[TD18HS01]","lifeSupport|First aid & Basic life support - What you should know[TD18HS02]","radiation|Radiation Hazards[TD18HS03]"];
+                    break;
+                case "SSB":
+                    var optionArray = ["|","psychology|Beyond AI: Insights from Psychology[TD18MS01]","market|Reinvent brand “you” and market yourself[TD18MDS02]","managementment|Learning through Management Games[TD18MS03]","lessonfromMovies|Management Lessons from Movies[TD18MS05]","socialmedial|Managing your Presence on the Social Media[TD18MS07]"];
+                    break;
+                default:
+                    var optionArray = ["|"];
+                }
+
+                for (var option in optionArray) {
+                    var pair = optionArray[option].split("|");
+                    var newOption = document.createElement("option");
+                    newOption.value = pair[0];
+                    newOption.innerHTML = pair[1];
+                    s2.add(newOption);
+                    
+                }
+            }
+        </script>
+            <td>
+                <select id="tdlSchool" name="tdlschool" onchange="populate(this.id,'tdlCourse')" required>
+                    <option value=""></option>
+                    <option value="SET">School of Engineering & Technology</option>
+                    <option value="SOL">School of Law</option>
+                    <option value="SSAA">Sushant School of Art and Architecture</option>
+                    <option value="SSD">Sushant School of Designing</option>
+                    <option value="SHM">School of Hospitality and Management</option>
+                    <option value="SHS">Sushant School of Health Science</option>
+                    <option value="SSB">Sushant School of Business</option>
+                    <option value="SSPD">Sushant School of Planning and Development</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Select Course : </td>
+            <td>
+                <select id="tdlCourse" name="tdlcourse" required></select>
+            </td>
+        </tr>
+        <tr>
+            <td>Reason to opt this course :</td>
+            <td><textarea name="reasontoOpt" rows="3" cols="35" placeholder="Write reason in min 250 characters....."></textarea></td>
+        </tr>
+    </table>
+<button type="submit"><b>Submit</b></button>
+<button type="Reset"><b>Reset</b></button>
+</form>
+                </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="javascript:;">About Author</a></li>
+                        <li><a href="javascript:;">Disclaimer</a></li>
+                    </ul>
+                </nav>
+                <p>By Manay Shankar </p>
+                <p>©Copyright ansaluniversity.edu.in - All Rights Reserved </p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
